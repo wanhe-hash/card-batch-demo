@@ -6,6 +6,15 @@
 #include "review.h"
 #include "publish.h"
 
+// === 整合所有模块 ===
+// provider:     LLM API 调用
+// knowledge_points: 知识点数据
+// batch_meta:   批次元信息
+// retry:        指数退避重试
+// checkpoint:   断点续跑
+// review:       审核状态管理
+// publish:      发布过滤输出
+
 #include <curl/curl.h>
 #include <nlohmann/json.hpp>
 #include <cstdlib>
